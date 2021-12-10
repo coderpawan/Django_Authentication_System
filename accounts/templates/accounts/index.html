@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Logged in user</title>
+  </head>
+  <style>
+    body {
+      background-image: linear-gradient(135deg, #f5b0cb, #42f2f7, #6fedb7);
+      overflow-x: hidden;
+    }
+    .welcome {
+      text-align: center;
+      font-size: 30px;
+      font-weight: 500;
+    }
+    p {
+      position: relative;
+      left: 37%;
+      top: 30px;
+      font-size: 20px;
+    }
+    a {
+      text-decoration: none;
+      border: 2px solid black;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: red;
+      color: white;
+      font-size: 20px;
+      position: relative;
+      left: 47%;
+      top: 70px;
+    }
+  </style>
+  <body>
+    <div class="welcome">Welcome {{request.user}}</div>
+    <p>This is the best website made by Pawan Kumar Sahu</p>
+    <a href="/logout">Logout</a>
+  </body>
+</html>
